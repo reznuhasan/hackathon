@@ -6,6 +6,7 @@ import Order from './components/Order'
 import Education from './components/Education'
 import Home from './components/Home'
 import Forecasts from './components/Forecasts'
+import Agriculture from './Layout/Agriculture'
 
 function App() {
   const router=createBrowserRouter([
@@ -22,8 +23,14 @@ function App() {
           element:<Education/>,
         },
         {
-          path:"/wheather-forecast",
-          element:<Forecasts/>
+          path:"/agriculture",
+          element:<Agriculture/>,
+          children:[
+            {
+              path:"weather",
+              element:<Forecasts/>
+          }
+          ]
         },
         {
           path:"/register",

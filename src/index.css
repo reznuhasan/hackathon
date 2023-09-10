@@ -188,3 +188,20 @@ a{
 .weather .radioButton input[type="radio"]:checked + label {
   font-weight: bold;
 }
+.agricultureHeader{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.agricultureHeader .agricultureMenu{
+  width: 600px;
+  background-color: #9400FF;
+  text-align: center;
+  padding: 10px;
+}
+.agricultureHeader a{
+  font-size: 18px;
+  color:whitesmoke;
+  margin: 15px 20px;
+  font-family: 700 !important;
+}
