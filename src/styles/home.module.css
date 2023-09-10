@@ -1,0 +1,10 @@
+.homeCarousel {
+    width: 100%;
+}
+
+.homeCarouselImg {
+    width: 100%;
+    min-height: 85vh;
+    height: 85hv;
+    object-fit: cover;
+}
