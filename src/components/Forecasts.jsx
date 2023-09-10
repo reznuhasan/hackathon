@@ -1,8 +1,5 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import ShowReco from './ShowReco';
 import { Button, Modal } from 'react-bootstrap';
 const Forecasts = () => {
     const [show, setShow] = useState(false);

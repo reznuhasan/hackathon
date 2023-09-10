@@ -5,7 +5,7 @@ const AgricultureHeader = () => {
     return (
         <div className='agricultureHeader'>
             <div className="agricultureMenu">
-                <Link to="weather">Forecast</Link>
+                <Link to="/weather">Forecast</Link>
                 <Link to="soil">Soil</Link>
                 <Link to="crops">Crops</Link>
             </div>

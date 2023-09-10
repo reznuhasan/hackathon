@@ -7,12 +7,15 @@ import Education from './components/Education'
 import Home from './components/Home'
 import Forecasts from './components/Forecasts'
 import Agriculture from './Layout/Agriculture'
+import ErrorPage from './components/ErrorPage'
+import Soil from './components/Soil'
 
 function App() {
   const router=createBrowserRouter([
     {
       path:"/",
       element:<Layout/>,
+      errorElement:<ErrorPage/>,
       children:[
         {
           path:"/",
@@ -23,12 +26,16 @@ function App() {
           element:<Education/>,
         },
         {
-          path:"/agriculture",
+          path:"/weather",
           element:<Agriculture/>,
           children:[
             {
-              path:"weather",
+              path:"",
               element:<Forecasts/>
+          },
+          {
+            path:"soil",
+            element:<Soil/>
           }
           ]
         },
