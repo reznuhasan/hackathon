@@ -9,6 +9,8 @@ import Forecasts from './components/Forecasts'
 import Agriculture from './Layout/Agriculture'
 import ErrorPage from './components/ErrorPage'
 import Soil from './components/Soil'
+import Crops from './components/Crops'
+import CourseDetails from './components/CourseDetails'
 
 function App() {
   const router=createBrowserRouter([
@@ -26,6 +28,10 @@ function App() {
           element:<Education/>,
         },
         {
+          path:"/course-details",
+          element:<CourseDetails/>
+        },
+        {
           path:"/weather",
           element:<Agriculture/>,
           children:[
@@ -36,6 +42,9 @@ function App() {
           {
             path:"soil",
             element:<Soil/>
+          },{
+            path:"crops",
+            element:<Crops/>
           }
           ]
         },

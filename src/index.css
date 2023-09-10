@@ -194,7 +194,7 @@ a{
   margin-top: 20px;
 }
 .agricultureHeader .agricultureMenu{
-  width: 600px;
+  width: 500px;
   background-color: #9400FF;
   text-align: center;
   padding: 10px;
@@ -216,4 +216,32 @@ a{
   color:red;
   font-size: 24px;
   font-weight: 700;
+}
+.courseDetails{
+  padding:10px 60px;
+}
+
+.courseDetails .context-box{
+   display:flex;
+   gap: 30px;
+}
+.courseDetails .context-box img{
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+}
+.courseDetails .learn-part{
+  margin-top: 10px;
+} 
+.courseDetails .list-part{
+  display: flex;
+  justify-content: space-around;
+}
+.courseDetails .list-part ul{
+  height: 600px;
+  width: 520px;
+  
+}
+.courseDetails .list-part ul li{
+  margin-top: 10px;
 }
