@@ -137,6 +137,11 @@ const JobPortal = () => {
                 </div>
             </div>
             <div>
+                <h1 style={{
+                    "textAlign":"center",
+                    "color":"#FF8B38",
+                    "margin":"15px 0"
+                }}>Jobs Part</h1>
                 {Jobs.map((job) => (
                     <JobListing key={job.id} job={job} />
                 ))}

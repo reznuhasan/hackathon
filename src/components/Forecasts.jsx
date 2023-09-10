@@ -11,12 +11,12 @@ const Forecasts = () => {
         startDate: "",
         endDate: "",
         includeTemperature: true,
-        temperature: 0,
+        temperature: "",
         includePrecipitation: true,
         includeHumidity: true,
-        humidity: 0,
+        humidity: "",
         includeWindSpeed: true,
-        windSpeed: 0,
+        windSpeed: "",
     });
 
     const handleInputChange = (e) => {
