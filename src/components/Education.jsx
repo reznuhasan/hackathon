@@ -17,13 +17,13 @@ const Education = () => {
             </div>
             <div className='videos-row'>
                 {
-                    videos.map(video => <Link to="/order"><Course key={video}></Course></Link>)
+                    videos.map(video => <Link to="/course-details"><Course key={video}></Course></Link>)
                 }
             </div>
             <h1 className='text-center'>Standard Tutorial</h1>
             <div className="videos-col">
                 {
-                    videos.map(video => <Link to="/order"><CourseCol key={video}></CourseCol></Link>)
+                    videos.map(video => <Link to="/course-details"><CourseCol key={video}></CourseCol></Link>)
                 }
             </div>
         </div>
