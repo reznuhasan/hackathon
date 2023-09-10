@@ -1,8 +1,81 @@
 import { useState } from "react"
 import "./HomeSession.css"
 import { Link } from "react-router-dom"
+import Course from "../Course"
 
 export default function HomeSession() {
+    const courses = [
+        {
+          courseName: "Web Development Fundamentals",
+          mentorName: "John Smith",
+          reviews: 92,
+          price: "$49.99",
+          image:"https://shorturl.at/fDEXZ"
+        },
+        {
+          courseName: "Data Science for Beginners",
+          mentorName: "Emily Johnson",
+          reviews: 78,
+          price: "$59.99",
+          image:"https://shorturl.at/mEJP2"
+        },
+        {
+          courseName: "Mobile App Development",
+          mentorName: "Michael Brown",
+          reviews: 85,
+          price: "$69.99",
+          image:"https://shorturl.at/uvRS3"
+        },
+        {
+          courseName: "Machine Learning Mastery",
+          mentorName: "Sophia Davis",
+          reviews: 97,
+          price: "$79.99",
+          image:"https://shorturl.at/mquB1",
+        },
+        {
+          courseName: "Digital Marketing Strategies",
+          mentorName: "David Wilson",
+          reviews: 88,
+          price: "$54.99",
+          image:"https://shorturl.at/fkPTW",
+        },
+        {
+          courseName: "Graphic Design Essentials",
+          mentorName: "Emma White",
+          reviews: 64,
+          price: "$44.99",
+          image:"https://shorturl.at/mqIU1"
+        },
+        {
+          courseName: "JavaScript Programming",
+          mentorName: "Robert Lee",
+          reviews: 76,
+          price: "$59.99",
+          image:"https://shorturl.at/fmq79"
+        },
+        {
+          courseName: "Artificial Intelligence Fundamentals",
+          mentorName: "Olivia Johnson",
+          reviews: 93,
+          price: "$89.99",
+          image:"https://shorturl.at/tzS36"
+        },
+        {
+          courseName: "Financial Planning and Investment",
+          mentorName: "William Davis",
+          reviews: 82,
+          price: "$74.99",
+          image:"https://shorturl.at/dwNX3"
+        },
+        {
+          courseName: "Photography Masterclass",
+          mentorName: "Sophie Brown",
+          reviews: 70,
+          price: "$64.99",
+          image:"https://shorturl.at/chBO6"
+        }
+      ];
     const [info, setInfo] = useState({
         title: "Digital Agriculture and Food Security",
         des: "Digital agriculture refers to the use of digital technologies, data, and information to enhance various aspects of agricultural practices and food production. The primary goal of digital agriculture is to improve agricultural efficiency, productivity, sustainability, and food security.",
@@ -94,31 +167,39 @@ export default function HomeSession() {
 
             <section>
                 <section id="awesome">
-                    <h1 id="awesome-title"> WHY THIS IS AWESOME </h1>
+                    <h1 id="awesome-title"> Skill Development Best Solution </h1>
                     <p id="awesome-divider"> </p>
                     <p id="awesome-sub-title"> Lorem ipsum, dolor sit amet. </p>
 
                     <div id="awesome-ideas">
                         <div className="idea-box">
                             <i className="fa-regular fa-lightbulb idea-icon"></i>
-                            <h5> Thoughtful Designs </h5>
-                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eum asperiores vel sunt perferendis
-                                ratione. </p>
+                            <h5> Development Education</h5>
+                            <p> Increasing education growth is a multifaceted goal that involves various stakeholders, including governments, educational institutions, teachers, parents, and students.</p>
                         </div>
 
                         <div className="idea-box">
                             <i className="fa-regular fa-lightbulb idea-icon"></i>
-                            <h5> Well Crafted </h5>
-                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eum asperiores vel sunt perferendis
-                                ratione. </p>
+                            <h5>Skill Development</h5>
+                            <p> Increasing skill development is crucial for personal and economic growth. Developing a skilled workforce can lead to higher productivity, innovation, and employability. </p>
                         </div>
 
                         <div className="idea-box">
                             <i className="fa-regular fa-lightbulb idea-icon"></i>
-                            <h5> Easy to Customize </h5>
-                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eum asperiores vel sunt perferendis
-                                ratione. </p>
+                            <h5> Economic Development </h5>
+                            <p> Solving economic development challenges is a complex and long-term process that requires a combination of strategies, policies, and efforts from governments, businesses, and communities. </p>
                         </div>
+                    </div>
+                    <div>
+                        <h1 className='text-center' style={{
+                            "marginTop":"-50px",
+                            "color":"#FF8B38"
+                        }}>Training Programs</h1>
+                    </div>
+                    <div className='videos-row'>
+                        {
+                            courses.slice(5).map((course) => <Link to="/course-details"><Course course={course} key={course.courseName}></Course></Link>)
+                        }
                     </div>
                 </section>
             </section>

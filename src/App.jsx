@@ -11,6 +11,7 @@ import ErrorPage from './components/ErrorPage'
 import Soil from './components/Soil'
 import Crops from './components/Crops'
 import CourseDetails from './components/CourseDetails'
+import PrivateRoute from './components/PrivateRoute'
 
 function App() {
   const router=createBrowserRouter([
@@ -32,7 +33,7 @@ function App() {
           element:<CourseDetails/>
         },
         {
-          path:"/weather",
+          path:"/agriculture",
           element:<Agriculture/>,
           children:[
             {

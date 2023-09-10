@@ -72,16 +72,20 @@ a{
 /* header part start */
 .header{
   width: 100%;
-  background-color: aqua;
+  background-color: #FF8B38;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: 12px 20px;
 }
 .header .menu a{
   margin:0 20px;
   font-size: 18px;
-  color: red;
+  color: white;
+}
+.logo h1{
+  color:#213555;
+  font-size: 24px;
 }
 .home{
   display: flex;
@@ -102,8 +106,10 @@ a{
 }
 .videos-row .video .video-text{
   height:100px;
-  font-size: 14px;
+  font-size: 16px;
   overflow: hidden;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .course-col{
@@ -113,9 +119,9 @@ a{
   align-items: center;
   margin: 10px;
   color: black;
-  border: 1px solid lightgreen;
+  border: 1px solid gainsboro;
   padding: 5px 20px;
-  background-color: lightblue;
+  background-color: white;
   height: 160px;
 }
 .course-col .name{
@@ -201,7 +207,7 @@ a{
 }
 .agricultureHeader a{
   font-size: 18px;
-  color:whitesmoke;
+  color:black;
   margin: 15px 20px;
   font-family: 700 !important;
 }
@@ -244,4 +250,112 @@ a{
 }
 .courseDetails .list-part ul li{
   margin-top: 10px;
+}
+.video-text{
+  height:100px;
+  font-size: 16px;
+  overflow: hidden;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.footer-logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links ul li {
+  margin: 10px;
+
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #00bcd4;
+}
+
+.footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-social ul li a:hover {
+  color: #00bcd4;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 5px 0;
+  background-color: #222;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  
+}
+
+/* Font Awesome Icons */
+.fa {
+  font-size: 1rem;
+}
+.agricultureHeader .myColor{
+  color: whitesmoke;
 }

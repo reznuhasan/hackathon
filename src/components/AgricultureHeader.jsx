@@ -1,13 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link,NavLink} from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 const AgricultureHeader = () => {
+    const location=useLocation()
     return (
         <div className='agricultureHeader'>
             <div className="agricultureMenu">
-                <Link to="/weather">Forecast</Link>
-                <Link to="soil">Soil</Link>
-                <Link to="crops">Crops</Link>
+                <NavLink  to="" className={location.pathname==="/agriculture"?"myColor":""}>Forecast</NavLink>
+                <NavLink  to="soil" className={location.pathname==="/agriculture/soil"?"myColor":""}>Soil</NavLink>
+                <NavLink to="crops" className={location.pathname==="/agriculture/crops"?"myColor":""}>Crops</NavLink>
             </div>
         </div>
     )

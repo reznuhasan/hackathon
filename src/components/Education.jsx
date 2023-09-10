@@ -6,7 +6,78 @@ import CourseCol from './CourseCol'
 import EduCarousel from './education/EduCarousel'
 
 const Education = () => {
-    const [videos, setVideos] = useState([1, 2, 3, 4, 5, 6, 7])
+    const courses = [
+        {
+          courseName: "Web Development Fundamentals",
+          mentorName: "John Smith",
+          reviews: 92,
+          price: "$49.99",
+          image:"https://shorturl.at/fDEXZ"
+        },
+        {
+          courseName: "Data Science for Beginners",
+          mentorName: "Emily Johnson",
+          reviews: 78,
+          price: "$59.99",
+          image:"https://shorturl.at/mEJP2"
+        },
+        {
+          courseName: "Mobile App Development",
+          mentorName: "Michael Brown",
+          reviews: 85,
+          price: "$69.99",
+          image:"https://shorturl.at/uvRS3"
+        },
+        {
+          courseName: "Machine Learning Mastery",
+          mentorName: "Sophia Davis",
+          reviews: 97,
+          price: "$79.99",
+          image:"https://shorturl.at/mquB1",
+        },
+        {
+          courseName: "Digital Marketing Strategies",
+          mentorName: "David Wilson",
+          reviews: 88,
+          price: "$54.99",
+          image:"https://shorturl.at/fkPTW",
+        },
+        {
+          courseName: "Graphic Design Essentials",
+          mentorName: "Emma White",
+          reviews: 64,
+          price: "$44.99",
+          image:"https://shorturl.at/mqIU1"
+        },
+        {
+          courseName: "JavaScript Programming",
+          mentorName: "Robert Lee",
+          reviews: 76,
+          price: "$59.99",
+          image:"https://shorturl.at/fmq79"
+        },
+        {
+          courseName: "Artificial Intelligence Fundamentals",
+          mentorName: "Olivia Johnson",
+          reviews: 93,
+          price: "$89.99",
+          image:"https://shorturl.at/tzS36"
+        },
+        {
+          courseName: "Financial Planning and Investment",
+          mentorName: "William Davis",
+          reviews: 82,
+          price: "$74.99",
+          image:"https://shorturl.at/dwNX3"
+        },
+        {
+          courseName: "Photography Masterclass",
+          mentorName: "Sophie Brown",
+          reviews: 70,
+          price: "$64.99",
+          image:"https://shorturl.at/chBO6"
+        }
+      ];
     return (
         <div className='home'>
             <div>
@@ -17,13 +88,13 @@ const Education = () => {
             </div>
             <div className='videos-row'>
                 {
-                    videos.map(video => <Link to="/course-details"><Course key={video}></Course></Link>)
+                    courses.map(course => <Link to="/course-details"><Course course={course} key={course.courseName}></Course></Link>)
                 }
             </div>
             <h1 className='text-center'>Standard Tutorial</h1>
             <div className="videos-col">
                 {
-                    videos.map(video => <Link to="/course-details"><CourseCol key={video}></CourseCol></Link>)
+                    courses.map(course => <Link to="/course-details"><CourseCol course={course} key={course.courseName}></CourseCol></Link>)
                 }
             </div>
         </div>

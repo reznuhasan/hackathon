@@ -1,8 +1,10 @@
 import React from 'react'
 import { Card, Col } from 'react-bootstrap'
-import image from "../assets/education.jpeg"
+// import image from "../assets/education.jpeg"
 
-const Course = () => {
+const Course = ({course}) => {
+    const {courseName,mentorName,reviews,price,image}=course
+    console.log(image)
     return (
         <Col className='video'>
             <Card>
@@ -10,11 +12,14 @@ const Course = () => {
                     "height":"180px",
                 }}/>
                 <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text className='video-text'>
-                        This is a longer card with supporting text below as a natural
-                        lead-in to additional content. This content is a little bit
-                        longer.
+                    <Card.Title style={{"fontSize":"16px"}}>{courseName}</Card.Title>
+                    <Card.Text className='video-text' style={{
+                        "display":"flex",
+                        "flexDirection":"column"
+                    }}>
+                        Mentor:{mentorName}<br/>
+                        Reviews:{reviews}<br/>
+                        Price:{price}
                     </Card.Text>
                 </Card.Body>
             </Card>

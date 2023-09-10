@@ -1,5 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import styles from "../../styles/edu.module.css"
+import ourImg1 from "../../assets/ourImg1.jpg"
+import ourImg2 from "../../assets/ourImg2.jpg"
+import ourImg3 from "../../assets/ourImg4.jpg"
 
 export default function EduCarousel() {
     return (
@@ -7,7 +10,7 @@ export default function EduCarousel() {
             <Carousel fade>
                 <Carousel.Item>
                     <div className={styles.eduCarousel}>
-                        <img className={styles.carouselImg} src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="" />
+                        <img className={styles.carouselImg} src={ourImg1} alt="" />
                     </div>
                     <Carousel.Caption>
                         <h3>First slide label</h3>
@@ -16,7 +19,7 @@ export default function EduCarousel() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className={styles.eduCarousel}>
-                        <img className={styles.carouselImg} src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="" />
+                        <img className={styles.carouselImg} src={ourImg2} alt="" />
                     </div>
                     <Carousel.Caption>
                         <h3>Second slide label</h3>
@@ -25,7 +28,7 @@ export default function EduCarousel() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className={styles.eduCarousel}>
-                        <img className={styles.carouselImg} src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="" />
+                        <img className={styles.carouselImg} src={ourImg3} alt="" />
                     </div>
                     <Carousel.Caption>
                         <h3>Third slide label</h3>
