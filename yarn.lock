@@ -1794,6 +1794,11 @@ path-parse@^1.0.7:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
+photoswipe@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/photoswipe/-/photoswipe-5.4.0.tgz#c102843a48fa3487b4d8395a6682e02b60d3216c"
+  integrity sha512-PZvdK1D94TApU0MNWc9H6eXOolKJOMkgt7CJ9ZfIdkHR4CrEj47MOe4Vrlcv6ZpHslK+uKS6Ai3y3VIe7gsi+Q==
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -2112,6 +2117,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+swiper@^10.2.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-10.2.0.tgz#e7369ff56f4e10069f2244a4436f732b8925deb0"
+  integrity sha512-nktQsOtBInJjr3f5DicxC8eHYGcLXDVIGPSon0QoXRaO6NjKnATCbQ8SZsD3dN1Ph1RH4EhVPwSYCcuDRFWHGQ==
 
 text-table@^0.2.0:
   version "0.2.0"
