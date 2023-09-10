@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import apiInstance from '../config/axios'
 
 const Login = () => {
-    const [data, setData] = useState({
+    const [loginData, setData] = useState({
         number: "",
         password: "",
     })
@@ -14,9 +15,22 @@ const Login = () => {
             }
         ))
     }
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(data)
+        const { number, password } = loginData
+        try {
+            const isUser = await apiInstance.post('/smart-village/login', {
+                email: number,
+                password
+            })
+
+            if (isUser.data.statusCode === 200) {
+                localStorage.setItem('user', JSON.stringify(isUser.data.data))
+                window.alert(isUser.data.message)
+            }
+        } catch (error) {
+            window.alert("Invalid Credentials")
+        }
     }
     return (
         <div className='login'>
@@ -24,8 +38,8 @@ const Login = () => {
             <form onSubmit={handleSubmit} className='login-form'>
                 <div className="inputField">
                     <label htmlFor="number">Phone Number:</label>
-                    <input type="number" name="number" id="numbr" onChange={handleChanged}
-                        placeholder='enter your phone number'
+                    <input type="text" name="number" id="numbr" onChange={handleChanged}
+                        placeholder='Enter your phone number'
                     />
                 </div>
                 <div className="inputField">
