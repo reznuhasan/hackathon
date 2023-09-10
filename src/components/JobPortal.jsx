@@ -1,5 +1,7 @@
 import React from 'react'
 import JobListing from './JobListing';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const JobPortal = () => {
     const Jobs = [
@@ -125,13 +127,13 @@ const JobPortal = () => {
         },
       ];
       
-
+    //   const element = <FontAwesomeIcon icon={faMagnifyingGlass} />
     return (
         <div>
             <div className="job-hero-part">
                 <div className="search-job">
                     <input type="text" name="search" id="search" placeholder='Search your job'/>
-                    
+                    <FontAwesomeIcon icon={faSearch} className="search-icon" />
                 </div>
             </div>
             <div>

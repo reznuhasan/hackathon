@@ -372,6 +372,7 @@ a{
 .search-job{
   display: flex;
   align-items: center;
+  position: relative;
 }
 .search-job input{
   width: 600px;
@@ -408,4 +409,10 @@ a{
 .job-content{
   width: 400px;
   height: 200px;
+}
+.search-icon{
+   position: absolute;
+   right: 20px;
+   font-size: 20px;
+   color: #0056b3;
 }
