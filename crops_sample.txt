@@ -1,0 +1,9 @@
+{
+  "latitude": 34.0522,
+  "longitude": -118.2437,
+  "placeName": "Los Angeles, CA",
+  "cropName": "Tomato",
+  "plantingDate": "2023-03-15",
+  "harvestingDate": "2023-06-15",
+  "cropHealth": 75.0
+}
