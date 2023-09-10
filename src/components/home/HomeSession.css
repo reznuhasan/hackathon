@@ -78,3 +78,64 @@
     border-radius: 5px;
     transition: 0.5s;
 }
+
+
+/* <----------------- This is for Sub list Section -----------------> */
+
+#sub-list-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub-img {
+    width: 40%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    color: #000000;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+#sub-details {
+    width: 50%;
+    margin-left: 3%;
+}
+
+#sub-divider {
+    width: 10% !important;
+    height: 2px;
+    background-color: #ff8b38;
+    margin: 1.5rem 0;
+}
+
+#sub-dec-main {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: rgb(36, 33, 33);
+    text-align: justify;
+    width: 85%;
+}
+
+.sub-dec-sub {
+    display: flex;
+    align-items: center;
+}
+
+.sub-dec-sub i {
+    font-size: 1.5rem;
+    color: #ff8b38;
+    margin-right: 30px;
+}
+
+.sub-dec-sub p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: rgb(39, 37, 37);
+    text-align: justify;
+    width: 77%;
+    margin-top: 20px;
+}
