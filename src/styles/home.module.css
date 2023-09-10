@@ -1,18 +1,10 @@
-.mainSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    background-color: #f5f5f5;
-    padding: 0 20px;
+.homeCarousel {
+    width: 100%;
 }
 
-.imgSection {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #000;
-    border-radius: 20px;
+.homeCarouselImg {
+    width: 100%;
+    min-height: 85vh;
+    height: 85hv;
+    object-fit: cover;
 }
