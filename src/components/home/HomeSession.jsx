@@ -91,6 +91,37 @@ export default function HomeSession() {
                     </div>
                 </section>
             </section>
+
+            <section>
+                <section id="awesome">
+                    <h1 id="awesome-title"> WHY THIS IS AWESOME </h1>
+                    <p id="awesome-divider"> </p>
+                    <p id="awesome-sub-title"> Lorem ipsum, dolor sit amet. </p>
+
+                    <div id="awesome-ideas">
+                        <div className="idea-box">
+                            <i className="fa-regular fa-lightbulb idea-icon"></i>
+                            <h5> Thoughtful Designs </h5>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eum asperiores vel sunt perferendis
+                                ratione. </p>
+                        </div>
+
+                        <div className="idea-box">
+                            <i className="fa-regular fa-lightbulb idea-icon"></i>
+                            <h5> Well Crafted </h5>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eum asperiores vel sunt perferendis
+                                ratione. </p>
+                        </div>
+
+                        <div className="idea-box">
+                            <i className="fa-regular fa-lightbulb idea-icon"></i>
+                            <h5> Easy to Customize </h5>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eum asperiores vel sunt perferendis
+                                ratione. </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </div>
     )
 }

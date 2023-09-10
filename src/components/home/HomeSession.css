@@ -139,3 +139,51 @@
     width: 77%;
     margin-top: 20px;
 }
+
+
+/* <----------------- This is for Awesome Section -----------------> */
+#awesome {
+    background-color: #F5F5F5;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+#awesome-title {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#awesome-sub-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+}
+
+#awesome-divider {
+
+    background: #ff8b38;
+    height: 2px;
+    width: 100px;
+    margin: 25px auto;
+}
+
+#awesome-ideas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.idea-box {
+    width: 25%;
+    margin: 0 2%;
+}
+
+.idea-icon {
+    font-size: 3rem;
+    color: #ff8b38;
+    margin-bottom: 20px;
+}
