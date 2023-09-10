@@ -1,9 +1,10 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './components/Home'
 import Layout from './Layout/Layout'
 import Register from './components/Register'
 import Login from './components/Login'
 import Order from './components/Order'
+import Education from './components/Education'
+import Home from './components/Home'
 
 function App() {
   const router=createBrowserRouter([
@@ -13,7 +14,11 @@ function App() {
       children:[
         {
           path:"/",
-          element:<Home/>,
+          element:<Home/>
+        },
+        {
+          path:"/education",
+          element:<Education/>,
         },
         {
           path:"/register",
