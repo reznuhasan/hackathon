@@ -12,6 +12,7 @@ import Soil from './components/Soil'
 import Crops from './components/Crops'
 import CourseDetails from './components/CourseDetails'
 import PrivateRoute from './components/PrivateRoute'
+import JobPortal from './components/JobPortal'
 
 function App() {
   const router=createBrowserRouter([
@@ -31,6 +32,10 @@ function App() {
         {
           path:"/course-details",
           element:<CourseDetails/>
+        },
+        {
+          path:"/job-portal",
+          element:<JobPortal/>
         },
         {
           path:"/agriculture",
