@@ -1,0 +1,10 @@
+{
+  "latitude": 34.0522,
+  "longitude": -118.2437,
+  "placeName": "Los Angeles, CA",
+  "analysisDate": "2023-09-15",
+  "pHLevel": 6.5,
+  "nutrientLevel": 25.3,
+  "moistureContent": 35.7,
+  "soilType": "Loam"
+}
