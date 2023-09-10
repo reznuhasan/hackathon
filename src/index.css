@@ -113,6 +113,10 @@ a{
   align-items: center;
   margin: 10px;
   color: black;
+  border: 1px solid lightgreen;
+  padding: 5px 20px;
+  background-color: lightblue;
+  height: 160px;
 }
 .course-col .name{
   width: 100px;
