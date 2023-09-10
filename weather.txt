@@ -1,0 +1,14 @@
+{
+    "latitude": 24.2287926,
+    "longitude": -89.7084685,
+    "placeName": "Enayetpur",
+    "startDate": "2023-09-15",
+    "endDate": "2023-09-20",
+    "includeTemperature": true,
+    "temperature": 10.0,
+    "includePrecipitation": true,
+    "includeHumidity": true,
+    "humidity": 85.0, 
+    "includeWindSpeed": true,
+    "windSpeed": 25.0 
+}
