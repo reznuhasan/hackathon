@@ -124,3 +124,67 @@ a{
 .course-col .text{
   width: 300px;
 }
+/* Container */
+.weather {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Heading */
+.weather h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Fields */
+.weather .inputField {
+  margin-bottom: 15px;
+}
+
+.weather .inputField label {
+  font-weight: bold;
+}
+
+.weather .inputField input[type="text"],
+.weather .inputField input[type="number"],
+.weather .inputField input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Radio Buttons */
+.weather .radioButton {
+  margin-bottom: 15px;
+}
+
+.weather .radioButton label {
+  margin-right: 10px;
+}
+
+/* Submit Button */
+.weather .buttonField button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.weather .buttonField button:hover {
+  background-color: #0056b3;
+}
+
+/* Checked Radio Button */
+.weather .radioButton input[type="radio"]:checked + label {
+  font-weight: bold;
+}

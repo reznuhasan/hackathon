@@ -5,6 +5,7 @@ import Login from './components/Login'
 import Order from './components/Order'
 import Education from './components/Education'
 import Home from './components/Home'
+import Forecasts from './components/Forecasts'
 
 function App() {
   const router=createBrowserRouter([
@@ -19,6 +20,10 @@ function App() {
         {
           path:"/education",
           element:<Education/>,
+        },
+        {
+          path:"/wheather-forecast",
+          element:<Forecasts/>
         },
         {
           path:"/register",
