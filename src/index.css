@@ -86,7 +86,7 @@ a{
 .home{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 20px;
 }
 .videos-row{
   width: 100%;
@@ -104,4 +104,19 @@ a{
   height:100px;
   font-size: 14px;
   overflow: hidden;
+}
+
+.course-col{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  color: black;
+}
+.course-col .name{
+  width: 100px;
+}
+.course-col .text{
+  width: 300px;
 }

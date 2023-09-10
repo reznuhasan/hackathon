@@ -9,13 +9,14 @@ const Home = () => {
   return (
     <div className='home'>
         <div>
-            <h1>All Courses</h1>
+            <h1 className='text-center'>All Courses</h1>
         </div>
         <div className='videos-row'>
             {
                 videos.map(video=><Link to="/order"><Course key={video}></Course></Link>)
             }
         </div>
+        <h1 className='text-center'>Standard Tutorial</h1>
         <div className="videos-col">
             {
                 videos.map(video=><Link to="/order"><CourseCol key={video}></CourseCol></Link>)
